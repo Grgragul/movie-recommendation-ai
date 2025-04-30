@@ -26,4 +26,5 @@ void sortMovies(Movie movies[]) {     for (int i = 0; i < MOVIE_COUNT - 1; i++) 
     }; 
 UserProfile user = {1, 0, 0, 1};      computeScores(movies, user);     sortMovies(movies);     printf("Recommended Movies:\n");     for (int i = 0; i < MOVIE_COUNT; i++) { 
         printf("%s (Score: %.1f)\n", movies[i].title, movies[i].score); 
-    }     return
+    }     return 0;
+}
